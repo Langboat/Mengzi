@@ -4,11 +4,13 @@ Mengzi-Oscar以英文多模态预训练模型[Oscar](https://github.com/microsof
 **预训练模型下载：**  
 **下游任务模型下载：**
 ## 中文图像摘要Demo（Randomly select from the AIC-ICC val set）
-![image](https://github.com/microsoft/Oscar/blob/master/docs/oscar.PNG)
-**Generated Caption：绿油油的草地上有两个面带微笑的人在骑马。**   
+![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/1.png)  
+**Generated Caption：绿油油的草地上有两个面带微笑的人在骑马。**     
 
-![image](https://github.com/microsoft/Oscar/blob/master/docs/oscar.PNG)
-**Generated Caption：沙滩上有一群穿着各异的人在搭帐篷。**
+<br>
+
+![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/2.png)  
+**Generated Caption：两个打着伞的人和一个背着孩子的男人走在被水淹没的道路上。**
 
 ## 模型使用（Pre-training / Image Caption / Retrieval）
 ### 安装 -- 通过github安装[Oscar](https://github.com/microsoft/Oscar)
