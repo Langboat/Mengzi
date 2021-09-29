@@ -37,7 +37,7 @@ DATA_DIR <path of image feature> \
 OUTPUT_DIR <path to save extracted features> \
 TEST.IGNORE_BOX_REGRESSION True MODEL.ATTRIBUTE_ON True TEST.OUTPUT_FEATURE True
 ```
-对于目标检测的英文标签结果，我们提供了[en-to-zh词表]()，可自行将英文标签转换为中文标签。预训练数据格式、下游任务数据格式、英文原版数据在开源项目[Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md)中可见。
+对于目标检测的英文标签结果，我们提供了[en-to-zh词表](https://github.com/ckmstydy/Mengzi/blob/main/chinese_label.json)，可自行将英文标签转换为中文标签。预训练数据格式、下游任务数据格式、英文原版数据在开源项目[Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md)中可见。
 
 #### 2）运行预训练命令（基于Mengzi bert base）
 ```
