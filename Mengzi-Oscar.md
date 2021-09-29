@@ -1,8 +1,8 @@
 ## 中文多模态预训练 Mengzi-Oscar 模型
 Mengzi-Oscar 以英文多模态预训练模型[Oscar](https://github.com/microsoft/Oscar)为基础训练，使用 Mengzi-Bert-base 初始化，使用了3.7M图文对，其中包含0.7M中文 Image-Caption pairs，3M中文 Image-Question pairs，共0.22M张图像。
 ## 中文多模态预训练 Mengzi-Oscar 模型 - 下载
-**预训练模型下载：**  
-**下游任务模型下载：**
+**预训练模型下载：**  [下载地址](https://huggingface.co/Langboat/mengzi-oscar-base)。  
+**下游任务模型下载：**  [中文图像摘要](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [中文图文互检](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
 ## 中文图像摘要 Demo（Randomly select from the AIC-ICC val set）
 ![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/1.png)  
 **Generated Caption：绿油油的草地上有两个面带微笑的人在骑马。**     
@@ -69,7 +69,7 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --output_dir <path to save the fine-tune model> --num_workers 8
 ```
   
-在AIC-ICC train set进行微调，并在 validation set 进行推理（8 RTX 3090 24G）  
+在 AIC-ICC train set 进行微调，并在 validation set 进行推理（8 RTX 3090 24G）  
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --data_dir < path of AIC-ICC dataset > \
