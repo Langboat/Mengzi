@@ -42,6 +42,7 @@ pip install transformers
 
 # 下载链接
 * [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base)
+* [Mengzi-BERT-fin](https://huggingface.co/Langboat/mengzi-bert-base-fin)
 * [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
