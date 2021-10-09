@@ -16,19 +16,20 @@
 ## Mengzi-BERT
 ```python
 # 使用 Huggingface transformers 加载
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import BertTokenizer, BertModel
 
-tokenizer = AutoTokenizer.from_pretrained("Langboat/mengzi-bert-base")
-model = AutoModelForSequenceClassification.from_pretrained("Langboat/mengzi-bert-base", num_labels=2)
+
+tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
+model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
 
 ```
 ## Mengzi-T5
 ```python
 # 使用 Huggingface transformers 加载
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-tokenizer = AutoTokenizer.from_pretrained("Langboat/mengzi-t5-base")
-model = AutoModelForSequenceClassification.from_pretrained("Langboat/mengzi-t5-base", num_labels=2)
+tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
+model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```
 
 ## Mengzi-Oscar
