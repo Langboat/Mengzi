@@ -21,7 +21,7 @@ Mengzi-Oscar 以英文多模态预训练模型[Oscar](https://github.com/microso
 Mengzi-Oscar使用了3.7M中文图文对，数据源分布：
 | Source | VQA<br>(train) | GQA<br>(bal-train) | VG-QA<br>(train)	| COCO<br>(train) | Flicker30k<br>(train)|
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| Iamge/Text | 83k/545k | 79k/1026k | 87k/931k | 112k/559k | 29k/145k |
+| Image/Text | 83k/545k | 79k/1026k | 87k/931k | 112k/559k | 29k/145k |
 
 图像目标检测，特征抽取：
 我们使用了开源项目 X152-C4 object-attribute detection 作为目标检测工具，项目地址[Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
