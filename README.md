@@ -17,6 +17,7 @@
 ```python
 # 使用 Huggingface transformers 加载
 from transformers import BertTokenizer, BertModel
+
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
 
