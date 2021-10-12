@@ -28,7 +28,7 @@ Mengzi-Oscar used 3.7M Chinese Image-text pairs with the following data source d
 
 Image objects detection, feature extraction:
 We use the open source project X152-C4 object-attribute detection as a object detection tool , the project address: [Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
-Pre-trained X152-C4 model [download address](https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth)。 
+Pre-trained X152-C4 model [download address](https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth).  
 Features are extracted by the following command:
 ```
 # pretrained models at https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth
