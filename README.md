@@ -46,4 +46,7 @@ pip install transformers
 * [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
+# 免责声明
+该项目中的内容仅供技术研究参考，不作为任何结论性依据。使用者可以在许可证范围内任意使用该模型，但我们不对因使用该项目内容造成的直接或间接损失负责。技术报告中所呈现的实验结果仅表明在特定数据集和超参组合下的表现，并不能代表各个模型的本质。 实验结果可能因随机数种子，计算设备而发生改变。
+
 # 文献引用
