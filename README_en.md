@@ -7,10 +7,10 @@ Based on linguistic information and training acceleration, we have developed the
 For detailed technical reports, please refer to: http://www.example.com
 
 # Navigation
-* [Quick Start](#Quick Start)
-* [Dependency](#Dependency)
-* [Download Links](#Download Links)
-* [Citation](#Citation)
+* [Quick Start](#quick-start)
+* [Dependency](#dependency)
+* [Download Links](#download-links)
+* [Citation](#citation)
 
 # Quick Start
 ## Mengzi-BERT
@@ -35,7 +35,7 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ## Mengzi-Oscar
 [Reference Document](https://github.com/Langboat/Mengzi/blob/main/Mengzi-Oscar.md)
 
-# Dependency Installation
+# Dependency
 ```bash
 pip install transformers
 ```
