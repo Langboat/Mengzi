@@ -2,7 +2,7 @@
 Mengzi-Oscar is trained based on the English multimodal pre-training model [Oscar](https://github.com/microsoft/Oscar)，initialized with [Mengzi-Bert-base](https://huggingface.co/Langboat/mengzi-bert-base), 
 using 3.7M image-text pairs, including 0.7M Chinese Image-Caption pairs and 3M Chinese Image-Question pairs, for a total of 0.22M images.
 ##  Mengzi-Oscar - Download
-**Pre-training Model Download：**  [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)。  
+**Pre-training Model Download：**  [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base).  
 **Downstream Task Model Download：**  [Chinese Image Caption](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [Chinese Image-Text Retrieval](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
 ## Chinese Image Caption Demo（Randomly select from the AIC-ICC val set）
 ![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/1.png)  
