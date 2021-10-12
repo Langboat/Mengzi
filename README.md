@@ -39,6 +39,27 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```bash
 pip install transformers
 ```
+# 下游任务
+## CLUE 分数
+| Model | AFQMC | TNEWS | IFLYTEK | CMNLI | WSC | CSL | CMRC2018 | C3 | CHID |
+|-|-|-|-|-|-|-|-|-|-|
+|RoBERTa-wwm-ext| 74.04 | 56.94 | 60.31 | 80.51 | 67.80 | 81.00 | 75.20 | 66.50 | 83.62 |
+|Mengzi-BERT-base| 74.58 | 57.97 | 60.68 | 82.12 | 87.50 | 85.40 | 78.54 | 71.70 | 84.16 |
+## 对应超参
+| Task | Learning rate | Batch size | Epochs |
+| - | - | - | - |
+| AFQMC | 3e-5 | 32 | 10 |
+| TNEWS | 3e-5 | 128 | 10 |
+| IFLYTEK | 3e-5 | 64 | 10 |
+| CMNLI | 3e-5 | 512 | 10 |
+| WSC | 8e-6 | 64 | 50 |
+| CSL | 5e-5 | 128 | 5 |
+| CMRC2018 | 5e-5 | 8 | 5 |
+| C3 | 1e-4 | 240 | 3 |
+| CHID | 5e-5 | 256 | 5 |
+
+
+*RoBERTa-wwm-ext 的分数来自 [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 
 # 下载链接
 * [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base)
