@@ -33,7 +33,7 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```
 
 ## Mengzi-Oscar
-[Reference Document](https://github.com/Langboat/Mengzi/blob/main/Mengzi-Oscar.md)
+[Document](https://github.com/Langboat/Mengzi/blob/main/Mengzi-Oscar_en.md)
 
 # Dependency
 ```bash
