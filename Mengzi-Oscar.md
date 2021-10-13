@@ -1,5 +1,5 @@
 ## 中文多模态预训练 Mengzi-Oscar 模型
-Mengzi-Oscar 以英文多模态预训练模型[Oscar](https://github.com/microsoft/Oscar)为基础训练，使用 Mengzi-Bert-base 初始化，使用了3.7M图文对，其中包含0.7M中文 Image-Caption pairs，3M中文 Image-Question pairs，共0.22M张图像。
+Mengzi-Oscar 以英文多模态预训练模型[Oscar](https://github.com/microsoft/Oscar)为基础训练，使用 [Mengzi-Bert-base](https://huggingface.co/Langboat/mengzi-bert-base) 初始化，使用了3.7M图文对，其中包含0.7M中文 Image-Caption pairs，3M中文 Image-Question pairs，共0.22M张图像。
 ## 中文多模态预训练 Mengzi-Oscar 模型 - 下载
 **预训练模型下载：**  [下载地址](https://huggingface.co/Langboat/mengzi-oscar-base)。  
 **下游任务模型下载：**  [中文图像摘要](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [中文图文互检](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
