@@ -45,6 +45,8 @@ pip install transformers
 |-|-|-|-|-|-|-|-|-|-|
 |RoBERTa-wwm-ext| 74.04 | 56.94 | 60.31 | 80.51 | 67.80 | 81.00 | 75.20 | 66.50 | 83.62 |
 |Mengzi-BERT-base| 74.58 | 57.97 | 60.68 | 82.12 | 87.50 | 85.40 | 78.54 | 71.70 | 84.16 |
+
+*The scores of RoBERTa-wwm-ext from [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 ## Corresponding hyperparameters
 | Task | Learning rate | Batch size | Epochs |
 | - | - | - | - |
@@ -57,9 +59,6 @@ pip install transformers
 | CMRC2018 | 5e-5 | 8 | 5 |
 | C3 | 1e-4 | 240 | 3 |
 | CHID | 5e-5 | 256 | 5 |
-
-
-*The scores of RoBERTa-wwm-ext from [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 
 # Download Links
 * [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base)
