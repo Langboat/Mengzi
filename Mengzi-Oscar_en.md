@@ -1,32 +1,35 @@
-## 中文多模态预训练 Mengzi-Oscar 模型
-Mengzi-Oscar 以英文多模态预训练模型[Oscar](https://github.com/microsoft/Oscar)为基础训练，使用 [Mengzi-Bert-base](https://huggingface.co/Langboat/mengzi-bert-base) 初始化，使用了3.7M图文对，其中包含0.7M中文 Image-Caption pairs，3M中文 Image-Question pairs，共0.22M张图像。
-## 中文多模态预训练 Mengzi-Oscar 模型 - 下载
-**预训练模型下载：**  [下载地址](https://huggingface.co/Langboat/mengzi-oscar-base)。  
-**下游任务模型下载：**  [中文图像摘要](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [中文图文互检](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
-## 中文图像摘要 Demo（Randomly select from the AIC-ICC val set）
+## Chinese multimodal pre-training model Mengzi-Oscar 
+Mengzi-Oscar is trained based on the English multimodal pre-training model [Oscar](https://github.com/microsoft/Oscar)，initialized with [Mengzi-Bert-base](https://huggingface.co/Langboat/mengzi-bert-base), 
+using 3.7M image-text pairs, including 0.7M Chinese Image-Caption pairs and 3M Chinese Image-Question pairs, for a total of 0.22M images.
+##  Mengzi-Oscar - Download
+**Pre-training Model Download：**  [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base).  
+**Downstream Task Model Download：**  [Chinese Image Caption](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [Chinese Image-Text Retrieval](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
+## Chinese Image Caption Demo（Randomly select from the AIC-ICC val set）
 ![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/1.png)  
-**Generated Caption：绿油油的草地上有两个面带微笑的人在骑马。**     
+**Generated Chinese Caption：绿油油的草地上有两个面带微笑的人在骑马。**   
+**English Version (translated for reference)：two smiling men are riding horses on the green grass.**     
 
 <br>
 
 ![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/2.png)  
-**Generated Caption：两个打着伞的人和一个背着孩子的男人走在被水淹没的道路上。**
+**Generated Chinese Caption：两个打着伞的人和一个背着孩子的男人走在被水淹没的道路上。**  
+**English Version (translated for reference)：Two people with umbrellas and a man with a child on his back walked along the flooded road.**     
 
-## 模型使用（Pre-training / Image Caption / Retrieval）
-### 安装 -- 通过 github 安装 [Oscar](https://github.com/microsoft/Oscar)
-参考 [Oscar INSTALL.md](https://github.com/microsoft/Oscar/blob/master/INSTALL.md)
+## Quick Start（Pre-training / Image Caption / Retrieval）
+### Installation -- Install [Oscar](https://github.com/microsoft/Oscar) via github
+Check [INSTALL.md](https://github.com/microsoft/Oscar/blob/master/INSTALL.md) for installation instructions.
 
-### 预训练 Pre-training
-#### 1）预训练数据准备
-Mengzi-Oscar使用了3.7M中文图文对，数据源分布：
+### Pre-training
+#### 1）Data preparation for Pre-training
+Mengzi-Oscar used 3.7M Chinese Image-text pairs with the following data source distribution:
 | Source | VQA<br>(train) | GQA<br>(bal-train) | VG-QA<br>(train)	| COCO<br>(train) | Flicker30k<br>(train)|
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Image/Text | 83k/545k | 79k/1026k | 87k/931k | 112k/559k | 29k/145k |
 
-图像目标检测，特征抽取：
-我们使用了开源项目 X152-C4 object-attribute detection 作为目标检测工具，项目地址[Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
-预训练 X152-C4 模型[下载地址](https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth)。 
-通过以下命令抽取特征：
+Image objects detection, feature extraction:
+We use the open source project X152-C4 object-attribute detection as a object detection tool , the project address: [Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
+Pre-trained X152-C4 model [download address](https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth).  
+Features are extracted by the following command:
 ```
 # pretrained models at https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth
 # the associated labelmap at https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/VG-SGG-dicts-vgoi6-clipped.json
@@ -37,9 +40,10 @@ DATA_DIR <path of image feature> \
 OUTPUT_DIR <path to save extracted features> \
 TEST.IGNORE_BOX_REGRESSION True MODEL.ATTRIBUTE_ON True TEST.OUTPUT_FEATURE True
 ```
-对于目标检测的英文标签结果，我们提供了 [en-to-zh词表](https://github.com/ckmstydy/Mengzi/blob/main/chinese_label.json)，可自行将英文标签转换为中文标签。预训练数据格式、下游任务数据格式、英文原版数据在开源项目 [Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md)中可见。
+For the English label results of object detection, we provide [en-to-zh word dictionary](https://github.com/ckmstydy/Mengzi/blob/main/chinese_label.json),
+you can convert English labels to Chinese labels by it. The pre-training data format, downstream task data format, and the original English data are visible in the open source project [Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md).
 
-#### 2）运行预训练命令（基于 Mengzi bert base）
+#### 2）Run pre-training commands（based on Mengzi bert base）
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_oscarplus_pretrain.py \
 --use_b 1 --max_grad_norm 10.0 \
@@ -54,11 +58,11 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_oscarplus_pretra
 --dataset_file coco_flickr30k_gqa.yaml \
 --textb_sample_mode 1 --texta_false_prob 0.25 --num_workers 8 
 ```
-### 中文图像摘要（fine-tune on COCO&AIC-ICC）
-#### 1）fine-tune 数据准备
-见 pretraining data 的目标检测、特征抽取方法。
+### Chinese Image Caption（fine-tune on COCO & AIC-ICC）
+#### 1）data preparation for fine-tuning
+See the object detection and feature extraction methods of pre-training data.
 #### 2）fine-tune
-在 COCO image caption 数据集上进行微调（8 RTX 3090 24G）
+fine-tune on COCO image caption dataset（8 RTX 3090 24G）
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --data_dir < path of downloaded coco dataset > \
@@ -69,7 +73,7 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --output_dir <path to save the fine-tune model> --num_workers 8
 ```
   
-在 AIC-ICC train set 进行微调，并在 validation set 进行推理（8 RTX 3090 24G）  
+fine-tune on AIC-ICC train set, and inference on validation set（8 RTX 3090 24G）  
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --data_dir < path of AIC-ICC dataset > \
@@ -81,7 +85,7 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --evaluate_during_training --num_workers 8 --num_beams 5
 ```
 
-在数据集上进行 inference
+inference on dataset
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --data_dir <path of test dataset> \
@@ -90,12 +94,12 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 --eval_model_dir <path of fine-tuned Chinese Image Caption model>
 ```
 
-### 中文图文互检（fine-tune on COCO and inference on AIC-ICC）
-我们在 COCO_ir 数据集上进行微调，并从AIC-ICC validation set中选取1K张图片（每张图片包含5条ground truth caption）进行评测。
-#### 1）fine-tune 数据准备
-见 pretraining data 的目标检测、特征抽取方法。
+### Chinese Image-Text Retrieval（fine-tune on COCO and inference on AIC-ICC）
+We fine-tune the pre-trainig model on COCO_ir dataset, and randomly select 1K pictures from the AIC-ICC validation set (each picture contains 5 ground truth captions) for evaluation.
+#### 1）data preparation for fine-tuning  
+See the object detection and feature extraction methods of pre-training data.
 #### 2）fine-tune
-在 COCO_ir 数据集上进行微调：
+fine-tune on COCO_ir dataset:
 ```
 python oscar/run_retrieval.py --model_name_or_path <path of pretrained model>\
 --data_dir <path of coco_ir> \
@@ -106,7 +110,7 @@ python oscar/run_retrieval.py --model_name_or_path <path of pretrained model>\
 --add_od_labels --od_label_type vg --max_seq_length 70 --max_img_seq_length 70 \
 --output_dir <path to save mdoel> --save_steps 5000 --logging_steps 500
 ```
-在AIC-ICC validation 1k 数据集上进行评测：
+evaluation on the AIC-ICC validation 1k dataset:
 ```
 python mengzi-oscar/run_retrieval.py --do_test --do_eval --test_split val \
 --num_captions_per_img_val 5 --cross_image_eval --per_gpu_eval_batch_size 1024 \
