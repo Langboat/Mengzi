@@ -4,7 +4,9 @@
 
 基于语言学信息和训练加速等方法，我们研发了 Mengzi 系列模型。由于与 BERT 保持一致的模型结构，Mengzi 模型可以快速替换现有的预训练模型。
 
-详细的技术报告请参考: http://www.example.com
+详细的技术报告请参考:
+
+[Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
 # 导航
 * [快速上手](#快速上手)
@@ -70,3 +72,13 @@ pip install transformers
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。使用者可以在许可证范围内任意使用该模型，但我们不对因使用该项目内容造成的直接或间接损失负责。技术报告中所呈现的实验结果仅表明在特定数据集和超参组合下的表现，并不能代表各个模型的本质。 实验结果可能因随机数种子，计算设备而发生改变。
 
 # 文献引用
+```
+@misc{zhang2021mengzi,
+      title={Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese}, 
+      author={Zhuosheng Zhang and Hanqing Zhang and Keming Chen and Yuhang Guo and Jingyun Hua and Yulong Wang and Ming Zhou},
+      year={2021},
+      eprint={2110.06696},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
