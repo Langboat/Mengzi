@@ -12,6 +12,8 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+**扫描二维码加入孟子开源社区微信群**
+
 <img src="https://user-images.githubusercontent.com/1523477/137276047-00ab441a-ae87-4f95-9483-842f9e359bdd.jpg" width="200">
 
 # 导航
