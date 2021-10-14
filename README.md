@@ -1,3 +1,5 @@
+# 
+
 尽管预训练语言模型在 NLP 的各个领域里得到了广泛的应用，但是其高昂的时间和算力成本依然是一个亟需解决的问题。这要求我们在一定的算力约束下，研发出各项指标更优的模型。
 
 我们的目标不是追求更大的模型规模，而是轻量级但更强大的模型，同时对部署和工业落地更友好。
@@ -47,7 +49,7 @@ pip install transformers
 ## CLUE 分数
 | Model | AFQMC | TNEWS | IFLYTEK | CMNLI | WSC | CSL | CMRC2018 | C3 | CHID |
 |-|-|-|-|-|-|-|-|-|-|
-|RoBERTa-wwm-ext| 74.04 | 56.94 | 60.31 | 80.51 | 67.80 | 81.00 | 75.20 | 66.50 | 83.62 |
+|RoBERTa-wwm-ext| 74.30 | 57.51 | 60.80 | 80.70 | 67.20 | 80.67 | 77.59 | 67.06 | 83.78 |
 |Mengzi-BERT-base| 74.58 | 57.97 | 60.68 | 82.12 | 87.50 | 85.40 | 78.54 | 71.70 | 84.16 |
 
 *RoBERTa-wwm-ext 的分数来自 [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
