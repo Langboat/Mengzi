@@ -7,7 +7,8 @@ Our goal is not to pursue a larger model size, but a lightweight but more powerf
 
 Based on linguistic information and training acceleration, we have developed the Mengzi family of models. Due to the consistent model structure with BERT, Mengzi models can quickly replace existing pre-trained models.
 
-For detailed technical reports, please refer to: http://www.example.com
+For detailed technical reports, please refer to: 
+[Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
 ## Navigation
 * [Quick Start](#quick-start)
