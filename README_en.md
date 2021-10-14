@@ -1,14 +1,13 @@
 [**中文**](./README.md) | [**English**](./README_en.md)
 
 # Mengzi
-Although pre-trained language models are widely used in various fields of NLP, their high time and computing power costs are still a pressing problem. This requires us to develop models with better metrics under certain computing power constraints.
+Although pre-trained models (PLMs) have achieved remarkable improvements in a wide range of NLP tasks, they are expensive in terms of time and resources. This calls for the study of training more efficient models with less computation but still ensures impressive performance. 
 
-Our goal is not to pursue a larger model size, but a lightweight but more powerful model that is also more friendly to deployment and industrial landing.
+Instead of pursuing a larger scale, we are committed to developing lightweight yet more powerful models trained with equal or less computation and friendly to rapid deployment. 
 
-Based on linguistic information and training acceleration, we have developed the Mengzi family of models. Due to the consistent model structure with BERT, Mengzi models can quickly replace existing pre-trained models.
+Based on linguistic information integration and training acceleration methods, we have developed the family of Mengzi models. Due to the same model structure as BERT, Mengzi models can quickly replace existing pre-trained models.
 
-For detailed technical reports, please refer to: 
-[Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
+See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696) for details.
 
 ## Navigation
 * [Quick Start](#quick-start)
