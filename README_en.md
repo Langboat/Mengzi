@@ -7,8 +7,7 @@ Our goal is not to pursue a larger model size, but a lightweight but more powerf
 
 Based on linguistic information and training acceleration, we have developed the Mengzi family of models. Due to the consistent model structure with BERT, Mengzi models can quickly replace existing pre-trained models.
 
-For detailed technical reports, please refer to: 
-[Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
+For detailed technical reports, please refer to: http://www.example.com
 
 ## Navigation
 * [Quick Start](#quick-start)
@@ -21,7 +20,6 @@ For detailed technical reports, please refer to:
 ```python
 # Loading with Huggingface transformers
 from transformers import BertTokenizer, BertModel
-
 
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
