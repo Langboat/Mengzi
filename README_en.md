@@ -71,7 +71,7 @@ pip install transformers
 * [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
-## Contact us
+## Contact Us
 wangyulong@chuangxin.com
 
 ## Disclaimers
