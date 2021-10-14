@@ -74,3 +74,13 @@ While using the models (which include but not limited to  modified use, direct u
 We reserve the right to interpret, modify and update this Disclaimer.
 
 # Citation
+```
+@misc{zhang2021mengzi,
+      title={Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese}, 
+      author={Zhuosheng Zhang and Hanqing Zhang and Keming Chen and Yuhang Guo and Jingyun Hua and Yulong Wang and Ming Zhou},
+      year={2021},
+      eprint={2110.06696},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
