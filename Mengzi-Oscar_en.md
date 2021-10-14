@@ -27,7 +27,7 @@ Mengzi-Oscar used 3.7M Chinese Image-text pairs with the following data source d
 | Image/Text | 83k/545k | 79k/1026k | 87k/931k | 112k/559k | 29k/145k |
 
 Image objects detection, feature extraction:
-We use the open source project X152-C4 object-attribute detection as a object detection tool , the project address: [Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
+We use the open-source project X152-C4 object-attribute detection as an object detection tool, the project address: [Scene Graph Benchmark Repo](https://github.com/microsoft/scene_graph_benchmark).  
 Pre-trained X152-C4 model [download address](https://penzhanwu2.blob.core.windows.net/sgg/sgg_benchmark/vinvl_model_zoo/vinvl_vg_x152c4.pth).  
 Features are extracted by the following command:
 ```
@@ -41,9 +41,9 @@ OUTPUT_DIR <path to save extracted features> \
 TEST.IGNORE_BOX_REGRESSION True MODEL.ATTRIBUTE_ON True TEST.OUTPUT_FEATURE True
 ```
 For the English label results of object detection, we provide [en-to-zh word dictionary](https://github.com/ckmstydy/Mengzi/blob/main/chinese_label.json),
-you can convert English labels to Chinese labels by it. The pre-training data format, downstream task data format, and the original English data are visible in the open source project [Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md).
+you can convert English labels to Chinese labels by it. The pre-training data format, downstream task data format, and the original English data are visible in the open-source project [Oscar VinVL_DOWNLOAD.md](https://github.com/microsoft/Oscar/blob/master/VinVL_DOWNLOAD.md).
 
-#### 2）Run pre-training commands（based on Mengzi bert base）
+#### 2）Run pre-training commands（based on Mengzi-BERT-base）
 ```
 python -m torch.distributed.launch --nproc_per_node=8 oscar/run_oscarplus_pretrain.py \
 --use_b 1 --max_grad_norm 10.0 \
@@ -95,7 +95,7 @@ python -m torch.distributed.launch --nproc_per_node=8 oscar/run_captioning.py \
 ```
 
 ### Chinese Image-Text Retrieval（fine-tune on COCO and inference on AIC-ICC）
-We fine-tune the pre-trainig model on COCO_ir dataset, and randomly select 1K pictures from the AIC-ICC validation set (each picture contains 5 ground truth captions) for evaluation.
+We fine-tune the pre-training model on the COCO_ir dataset, and randomly select 1K pictures from the AIC-ICC validation set (each picture contains 5 ground truth captions) for evaluation.
 #### 1）data preparation for fine-tuning  
 See the object detection and feature extraction methods of pre-training data.
 #### 2）fine-tune
