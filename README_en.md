@@ -46,7 +46,7 @@ pip install transformers
 ### CLUE Scores
 | Model | AFQMC | TNEWS | IFLYTEK | CMNLI | WSC | CSL | CMRC2018 | C3 | CHID |
 |-|-|-|-|-|-|-|-|-|-|
-|RoBERTa-wwm-ext| 74.04 | 56.94 | 60.31 | 80.51 | 67.80 | 81.00 | 75.20 | 66.50 | 83.62 |
+|RoBERTa-wwm-ext| 74.30 | 57.51 | 60.80 | 80.70 | 67.20 | 80.67 | 77.59 | 67.06 | 83.78 |
 |Mengzi-BERT-base| 74.58 | 57.97 | 60.68 | 82.12 | 87.50 | 85.40 | 78.54 | 71.70 | 84.16 |
 
 *The scores of RoBERTa-wwm-ext from [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
