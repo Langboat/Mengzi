@@ -2,7 +2,7 @@
 
 尽管预训练语言模型在 NLP 的各个领域里得到了广泛的应用，但是其高昂的时间和算力成本依然是一个亟需解决的问题。这要求我们在一定的算力约束下，研发出各项指标更优的模型。
 
-我们的目标不是追求更大的模型规模，而是轻量级但更强大的模型，同时对部署和工业落地更友好。
+我们的目标不是追求更大的模型规模，而是轻量级但更强大，同时对部署和工业落地更友好的模型。
 
 基于语言学信息和训练加速等方法，我们研发了 Mengzi 系列模型。由于与 BERT 保持一致的模型结构，Mengzi 模型可以快速替换现有的预训练模型。
 
@@ -23,7 +23,6 @@
 ```python
 # 使用 Huggingface transformers 加载
 from transformers import BertTokenizer, BertModel
-
 
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
