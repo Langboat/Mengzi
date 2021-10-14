@@ -13,6 +13,8 @@ See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](h
 * [Quick Start](#quick-start)
 * [Dependency](#dependency)
 * [Download Links](#download-links)
+* [Contact us](#contact-us)
+* [Disclaimers](#disclaimers)
 * [Citation](#citation)
 
 ## Quick Start
@@ -68,6 +70,9 @@ pip install transformers
 * [Mengzi-BERT-fin](https://huggingface.co/Langboat/mengzi-bert-base-fin)
 * [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
+
+## Contact us
+wangyulong@chuangxin.com
 
 ## Disclaimers
 The contents of this project are for technical research purposes only and are not intended as a basis for any conclusive findings. Users are free to use the models as they wish within the scope of the license, but we are not responsible for direct or indirect damages resulting from the use of the contents of this project. The experimental results presented in the technical report only indicate performance with specific data sets and hyperparameter combinations and are not representative of the nature of the individual models. Experimental results are subject to change due to random number seeds, computing equipment.
