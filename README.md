@@ -77,7 +77,7 @@ pip install transformers
 <img src="https://user-images.githubusercontent.com/1523477/137276047-00ab441a-ae87-4f95-9483-842f9e359bdd.jpg" width="200">
 
 ## 邮箱
-wangyulong@chuangxin.com
+wangyulong at chuangxin.com
 
 # 免责声明
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。使用者可以在许可证范围内任意使用该模型，但我们不对因使用该项目内容造成的直接或间接损失负责。技术报告中所呈现的实验结果仅表明在特定数据集和超参组合下的表现，并不能代表各个模型的本质。 实验结果可能因随机数种子，计算设备而发生改变。
