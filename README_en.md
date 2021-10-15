@@ -5,7 +5,7 @@ Although pre-trained models (PLMs) have achieved remarkable improvements in a wi
 
 Instead of pursuing a larger scale, we are committed to developing lightweight yet more powerful models trained with equal or less computation and friendly to rapid deployment. 
 
-Based on linguistic information integration and training acceleration methods, we have developed the family of Mengzi models. Due to the same model structure as BERT, Mengzi models can quickly replace existing pre-trained models.
+Based on linguistic information integration and training acceleration methods, we have developed the family of Mengzi models. Mengzi models can quickly replace existing pre-trained models because of the same model structure as BERT.
 
 See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696) for details.
 
