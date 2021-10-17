@@ -16,6 +16,7 @@
 * [快速上手](#快速上手)
 * [依赖安装](#依赖安装)
 * [下载链接](#下载链接)
+* [联系方式](#联系方式)
 * [免责声明](#免责声明)
 * [文献引用](#文献引用)
 
@@ -71,6 +72,11 @@ pip install transformers
 * [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
+#联系方式
+## 微信讨论群
+<img src="https://user-images.githubusercontent.com/1523477/137630760-d704aa9e-41be-4bea-8213-a83f5f027982.jpg" width="200">
+## 邮箱
+wangyulong[at]chuangxin[dot]com
 
 # 免责声明
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。使用者可以在许可证范围内任意使用该模型，但我们不对因使用该项目内容造成的直接或间接损失负责。技术报告中所呈现的实验结果仅表明在特定数据集和超参组合下的表现，并不能代表各个模型的本质。 实验结果可能因随机数种子，计算设备而发生改变。
