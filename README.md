@@ -13,12 +13,21 @@
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
 # 导航
+* [模型介绍](#模型介绍)
 * [快速上手](#快速上手)
 * [依赖安装](#依赖安装)
 * [下载链接](#下载链接)
 * [联系方式](#联系方式)
 * [免责声明](#免责声明)
 * [文献引用](#文献引用)
+
+# 模型介绍
+|模型|参数量|适用场景|特点|
+|-|-|-|-|
+|Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重|
+|Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|
+|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|
+|Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|
 
 # 快速上手
 ## Mengzi-BERT
