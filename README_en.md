@@ -10,7 +10,7 @@ Based on linguistic information integration and training acceleration methods, w
 See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696) for details.
 
 # Navigation
-# [Introduction](#introduction)
+* [Introduction](#introduction)
 * [Quick Start](#quick-start)
 * [Dependency](#dependency)
 * [Download Links](#download-links)
@@ -47,7 +47,7 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```
 
 ## Mengzi-Oscar
-[Document](https://github.com/Langboat/Mengzi/blob/main/Mengzi-Oscar_en.md)
+[Document](./Mengzi-Oscar_en.md)
 
 # Dependency
 ```bash
