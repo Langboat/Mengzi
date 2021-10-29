@@ -5,13 +5,13 @@ using 3.7M image-text pairs, including 0.7M Chinese Image-Caption pairs and 3M C
 **Pre-training Model Download：**  [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base).  
 **Downstream Task Model Download：**  [Chinese Image Caption](https://huggingface.co/Langboat/mengzi-oscar-base-caption).  [Chinese Image-Text Retrieval](https://huggingface.co/Langboat/mengzi-oscar-base-retrieval).
 ## Chinese Image Caption Demo（Randomly select from the AIC-ICC val set）
-![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/1.png)  
+![image](./Demo_images/1.png)  
 **Generated Chinese Caption：绿油油的草地上有两个面带微笑的人在骑马。**   
 **English Version (translated for reference)：two smiling men are riding horses on the green grass.**     
 
 <br>
 
-![image](https://github.com/ckmstydy/Mengzi/blob/main/Demo_images/2.png)  
+![image](./Demo_images/2.png)  
 **Generated Chinese Caption：两个打着伞的人和一个背着孩子的男人走在被水淹没的道路上。**  
 **English Version (translated for reference)：Two people with umbrellas and a man with a child on his back walked along the flooded road.**     
 
