@@ -48,7 +48,7 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```
 
 ## Mengzi-Oscar
-[参考文档](https://github.com/Langboat/Mengzi/blob/main/Mengzi-Oscar.md)
+[参考文档](./Mengzi-Oscar.md)
 
 # 依赖安装
 ```bash
