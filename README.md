@@ -63,7 +63,7 @@ pip install transformers
 
 *RoBERTa-wwm-ext 的分数来自 [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 ## 对应超参
-| Task | Learning rate | Batch size | Epochs |
+| Task | Learning rate | Global batch size | Epochs |
 | - | - | - | - |
 | AFQMC | 3e-5 | 32 | 10 |
 | TNEWS | 3e-5 | 128 | 10 |
