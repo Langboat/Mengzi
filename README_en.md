@@ -62,7 +62,7 @@ pip install transformers
 
 *The scores of RoBERTa-wwm-ext from [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 ## Corresponding hyperparameters
-| Task | Learning rate | Batch size | Epochs |
+| Task | Learning rate | Global batch size | Epochs |
 | - | - | - | - |
 | AFQMC | 3e-5 | 32 | 10 |
 | TNEWS | 3e-5 | 128 | 10 |
