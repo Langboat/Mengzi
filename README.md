@@ -22,12 +22,12 @@
 * [文献引用](#文献引用)
 
 # 模型介绍
-|模型|参数量|适用场景|特点|
-|-|-|-|-|
-|Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重|
-|Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|
-|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|
-|Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|
+|模型|参数量|适用场景|特点|下载链接|
+|-|-|-|-|-|
+|Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重| [HuggingFace](https://s.langboat.com/hfmengzibertbase)，[国内ZIP下载](https://s.langboat.com/mengzibertbase)|
+|Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|[HuggingFace](https://s.langboat.com/hfmengzibertbasefin)，[国内ZIP下载](https://s.langboat.com/mengzibertbasefin)|
+|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base)，[国内ZIP下载](https://s.langboat.com/mengzit5base)|
+|Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
 
 # 快速上手
 ## Mengzi-BERT
@@ -74,12 +74,6 @@ pip install transformers
 | CMRC2018 | 5e-5 | 8 | 5 |
 | C3 | 1e-4 | 240 | 3 |
 | CHID | 5e-5 | 256 | 5 |
-
-# 下载链接
-* [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base)
-* [Mengzi-BERT-fin](https://huggingface.co/Langboat/mengzi-bert-base-fin)
-* [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
-* [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
 # 联系方式
 
