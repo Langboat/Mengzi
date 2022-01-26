@@ -24,9 +24,9 @@
 # 模型介绍
 |模型|参数量|适用场景|特点|下载链接|
 |-|-|-|-|-|
-|Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重| [HuggingFace](https://s.langboat.com/hfmengzibertbase)，[国内ZIP下载](https://s.langboat.com/mengzibertbase)|
-|Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|[HuggingFace](https://s.langboat.com/hfmengzibertbasefin)，[国内ZIP下载](https://s.langboat.com/mengzibertbasefin)|
-|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base)，[国内ZIP下载](https://s.langboat.com/mengzit5base)|
+|Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重| [HuggingFace](https://s.langboat.com/hfmengzibertbase), [国内ZIP下载](https://s.langboat.com/mengzibertbase), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base/model_state.pdparams) |
+|Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|[HuggingFace](https://s.langboat.com/hfmengzibertbasefin), [国内ZIP下载](https://s.langboat.com/mengzibertbasefin), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base-fin/model_state.pdparams) |
+|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base)，[国内ZIP下载](https://s.langboat.com/mengzit5base, [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams) |
 |Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
 
 # 快速上手
@@ -38,10 +38,27 @@ from transformers import BertTokenizer, BertModel
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
 ```
+或者
+```python
+# 使用 PaddleNLP 加载
+from paddlenlp.transformers import BertTokenizer, BertModel
+
+tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
+model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
+```
+
 ## Mengzi-T5
 ```python
 # 使用 Huggingface transformers 加载
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
+model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
+```
+或者
+```python
+# 使用 PaddleNLP 加载
+from paddlenlp.transformers import T5Tokenizer, T5ForConditionalGeneration
 
 tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
 model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
@@ -52,7 +69,13 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 
 # 依赖安装
 ```bash
+# 使用 Huggingface transformers 加载
 pip install transformers
+```
+或者
+```bash
+# 使用 PaddleNLP 加载
+pip install paddlenlp
 ```
 # 下游任务
 ## CLUE 分数
