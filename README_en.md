@@ -9,6 +9,11 @@ Based on linguistic information integration and training acceleration methods, w
 
 See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696) for details.
 
+## Update 2022-02-10
+Thanks to @yingyibiao from the PaddlePaddle team for the PaddleNLP version of the model and documentation.
+
+Note: The PaddleNLP version of the model is not a product of Langboat Technology and we are not responsible for its results or effectiveness.
+
 # Navigation
 * [Introduction](#introduction)
 * [Quick Start](#quick-start)
