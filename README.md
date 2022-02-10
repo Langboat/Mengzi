@@ -12,11 +12,15 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-02-10
+感谢由飞桨团队 @yingyibiao 提供的 PaddleNLP 版本模型和文档。
+
+注意：PaddleNLP 版本的模型并非澜舟科技的产品，我们也不为其结果和效果承担相应责任。
+
 # 导航
 * [模型介绍](#模型介绍)
 * [快速上手](#快速上手)
 * [依赖安装](#依赖安装)
-* [下载链接](#下载链接)
 * [联系方式](#联系方式)
 * [免责声明](#免责声明)
 * [文献引用](#文献引用)
@@ -26,7 +30,7 @@
 |-|-|-|-|-|
 |Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重| [HuggingFace](https://s.langboat.com/hfmengzibertbase), [国内ZIP下载](https://s.langboat.com/mengzibertbase), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base/model_state.pdparams) |
 |Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|[HuggingFace](https://s.langboat.com/hfmengzibertbasefin), [国内ZIP下载](https://s.langboat.com/mengzibertbasefin), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base-fin/model_state.pdparams) |
-|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base)，[国内ZIP下载](https://s.langboat.com/mengzit5base, [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams) |
+|Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base), [国内ZIP下载](https://s.langboat.com/mengzit5base), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams) |
 |Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
 
 # 快速上手
