@@ -32,15 +32,30 @@ See [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](h
 # Loading with Huggingface transformers
 from transformers import BertTokenizer, BertModel
 
+tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
+model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
+```
+or
+```python
+# Loading with PaddleNLP
+from paddlenlp.transformers import BertTokenizer, BertModel
 
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
-
 ```
+
 ## Mengzi-T5
 ```python
 # Loading with Huggingface transformers
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
+model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
+```
+or
+```python
+# Loading with PaddleNLP
+from paddlenlp.transformers import T5Tokenizer, T5ForConditionalGeneration
 
 tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
 model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
@@ -51,8 +66,15 @@ model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 
 # Dependency
 ```bash
+# Loading with Huggingface transformers
 pip install transformers
 ```
+or
+```bash
+# Loading with PaddleNLP
+pip install paddlenlp
+```
+
 # Downstream tasks
 ## CLUE Scores
 | Model | AFQMC | TNEWS | IFLYTEK | CMNLI | WSC | CSL | CMRC2018 | C3 | CHID |
@@ -75,9 +97,9 @@ pip install transformers
 | CHID | 5e-5 | 256 | 5 |
 
 # Download Links
-* [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base)
-* [Mengzi-BERT-fin](https://huggingface.co/Langboat/mengzi-bert-base-fin)
-* [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base)
+* [Mengzi-BERT](https://huggingface.co/Langboat/mengzi-bert-base) | [Mengzi-BERT (PaddleNLP)](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base/model_state.pdparams)
+* [Mengzi-BERT-fin](https://huggingface.co/Langboat/mengzi-bert-base-fin) | [Mengzi-BERT-fin (PaddleNLP)](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base-fin/model_state.pdparams)
+* [Mengzi-T5](https://huggingface.co/Langboat/mengzi-t5-base) | [Mengzi-T5 (PaddleNLP)](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams)
 * [Mengzi-Oscar](https://huggingface.co/Langboat/mengzi-oscar-base)
 
 # Contact Us
