@@ -105,7 +105,7 @@ pip install paddlenlp
 # 联系方式
 
 ## 微信讨论群
-<img src="https://user-images.githubusercontent.com/1523477/137630760-d704aa9e-41be-4bea-8213-a83f5f027982.jpg" width="200">
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/1523477/154632798-bf8d70cb-4e13-4444-963c-1457fd84a236.png">
 
 ## 邮箱
 wangyulong[at]chuangxin[dot]com
