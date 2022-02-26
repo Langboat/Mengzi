@@ -12,6 +12,21 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-02-26
+@hululuzhu 基于 mengzi-t5-base 训练了中文AI写作模型，可以生成诗歌和对子。模型和具体用法请参考：[chinese-ai-writing-share](https://github.com/hululuzhu/chinese-ai-writing-share)
+
+一些生成例子：
+```
+上： 不待鸣钟已汗颜，重来试手竟何艰
+下： 何堪击鼓频催泪？一别伤心更枉然
+上： 北国风光，千里冰封，万里雪飘
+下： 南疆气象，五湖浪涌，三江潮来
+
+標題： 作诗：中秋
+詩歌： 秋氣侵肌骨，寒光入鬢毛。雲收千里月，風送一帆高。
+標題： 作诗：中秋 模仿：苏轼
+詩歌： 月從海上生，照我庭下影。不知此何夕，但見天宇靜。
+```
 ## Update 2022-02-10
 感谢由飞桨团队 @yingyibiao 提供的 PaddleNLP 版本模型和文档。
 
