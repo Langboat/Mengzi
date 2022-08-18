@@ -129,10 +129,10 @@ pip install paddlenlp
 # 联系方式
 
 ## 微信讨论群
-<img width="200" alt="image" src="https://user-images.githubusercontent.com/1523477/154632798-bf8d70cb-4e13-4444-963c-1457fd84a236.png">
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/26166111/185368078-029cfa9f-56d4-49d2-b22d-5ead0956b304.jpg">
 
 ## 邮箱
-wangyulong[at]chuangxin[dot]com
+wangyulong[at]langboat[dot]com
 
 # FAQ
 **Q. mengzi-bert-base 保存的模型大小是196M。  但 bert-base 的模型大小是在 389M 左右，是定义的 base 有区别，还是保存的时候，少了一些不必要的内容？**  
