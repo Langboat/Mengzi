@@ -15,7 +15,7 @@
 ## Update 2022-08-18
 @huajingyun 
 * 添加已开源的孟子蒸馏模型 [Mengzi-BERT-L6-H768](https://huggingface.co/Langboat/mengzi-bert-L6-H768)。该模型由 mengzi-bert-large 蒸馏获得。
-* 添加已开源的孟子多任务模型 [Mengzi-T5-base-MT](https://huggingface.co/Langboat/mengzi-t5-base-mt)。该模型是一个多任务模型，是在 [Mengzi-T5-base](https://huggingface.co/Langboat/mengzi-t5-base) 的基础上，使用了额外的27个数据集及301个 prompt 进行了多任务训练得到的。[mengzi-zero-shot](https://github.com/Langboat/mengzi-zero-shot)开源项目已提供实体抽取、语义相似度、金融关系抽取、广告文案生成、医学领域意图分类、情感分类、评论对象抽取、新闻分类等能力，开箱即用。
+* 添加已开源的孟子多任务模型 [Mengzi-T5-base-MT](https://huggingface.co/Langboat/mengzi-t5-base-mt)。该模型是一个多任务模型，是在 [Mengzi-T5-base](https://huggingface.co/Langboat/mengzi-t5-base) 的基础上，使用了额外的27个数据集及301个 prompt 进行了多任务训练得到的。[Mengzi Zero-Shot](https://github.com/Langboat/mengzi-zero-shot)开源项目已提供实体抽取、语义相似度、金融关系抽取、广告文案生成、医学领域意图分类、情感分类、评论对象抽取、新闻分类等能力，开箱即用。
 
 
 ## Update 2022-02-26
