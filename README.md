@@ -12,6 +12,12 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-08-18
+@huajingyun 
+* 添加已开源的孟子蒸馏模型 [Mengzi-BERT-L6-H768](https://huggingface.co/Langboat/mengzi-bert-L6-H768)。该模型由 mengzi-bert-large 蒸馏获得。
+* 添加已开源的孟子多任务模型 [Mengzi-T5-base-MT](https://huggingface.co/Langboat/mengzi-t5-base-mt)。该模型是一个多任务模型，是在 [Mengzi-T5-base](https://huggingface.co/Langboat/mengzi-t5-base) 的基础上，使用了额外的27个数据集及301个 prompt 进行了多任务训练得到的。[Mengzi Zero-Shot](https://github.com/Langboat/mengzi-zero-shot)开源项目已提供实体抽取、语义相似度、金融关系抽取、广告文案生成、医学领域意图分类、情感分类、评论对象抽取、新闻分类等能力，开箱即用。
+
+
 ## Update 2022-02-26
 @hululuzhu 基于 mengzi-t5-base 训练了中文AI写作模型，可以生成诗歌和对子。模型和具体用法请参考：[chinese-ai-writing-share](https://github.com/hululuzhu/chinese-ai-writing-share)
 
@@ -44,8 +50,10 @@
 |模型|参数量|适用场景|特点|下载链接|
 |-|-|-|-|-|
 |Mengzi-BERT-base|110M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|与 BERT 结构相同，可以直接替换现有 BERT 权重| [HuggingFace](https://s.langboat.com/hfmengzibertbase), [国内ZIP下载](https://s.langboat.com/mengzibertbase), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base/model_state.pdparams) |
+|Mengzi-BERT-L6-H768|60M|文本分类、实体识别、关系抽取、阅读理解等自然语言理解类任务|由 Mengzi-BERT-large 蒸馏获得| [HuggingFace](https://huggingface.co/Langboat/mengzi-bert-L6-H768) |
 |Mengzi-BERT-base-fin|110M|金融领域的自然语言理解类任务|基于 Mengzi-BERT-base 在金融语料上训练|[HuggingFace](https://s.langboat.com/hfmengzibertbasefin), [国内ZIP下载](https://s.langboat.com/mengzibertbasefin), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-bert-base-fin/model_state.pdparams) |
 |Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base), [国内ZIP下载](https://s.langboat.com/mengzit5base), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams) |
+|Mengzi-T5-base-MT|220M|提供 Zero-Shot、Few-Shot能力|多任务模型，可通过prompt完成各种任务|[HuggingFace](https://huggingface.co/Langboat/mengzi-t5-base-mt) |
 |Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
 
 # 快速上手
@@ -102,6 +110,7 @@ pip install paddlenlp
 |-|-|-|-|-|-|-|-|-|-|
 |RoBERTa-wwm-ext| 74.30 | 57.51 | 60.80 | 80.70 | 67.20 | 80.67 | 77.59 | 67.06 | 83.78 |
 |Mengzi-BERT-base| 74.58 | 57.97 | 60.68 | 82.12 | 87.50 | 85.40 | 78.54 | 71.70 | 84.16 |
+|Mengzi-BERT-L6-H768| 74.75 | 56.68 | 60.22 | 81.10 | 84.87 | 85.77 | 78.06 | 65.49 | 80.59 |
 
 *RoBERTa-wwm-ext 的分数来自 [CLUE baseline](https://github.com/CLUEbenchmark/CLUE)*
 ## 对应超参
@@ -120,10 +129,10 @@ pip install paddlenlp
 # 联系方式
 
 ## 微信讨论群
-<img width="200" alt="image" src="https://user-images.githubusercontent.com/1523477/154632798-bf8d70cb-4e13-4444-963c-1457fd84a236.png">
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/26166111/185368078-029cfa9f-56d4-49d2-b22d-5ead0956b304.jpg">
 
 ## 邮箱
-wangyulong[at]chuangxin[dot]com
+wangyulong[at]langboat[dot]com
 
 # FAQ
 **Q. mengzi-bert-base 保存的模型大小是196M。  但 bert-base 的模型大小是在 389M 左右，是定义的 base 有区别，还是保存的时候，少了一些不必要的内容？**  
