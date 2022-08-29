@@ -12,6 +12,11 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-08-29
+添加两个已开源的 GPT 架构模型：
+* 基于中文语料从头训练的 GPT-neo 模型 [Mengzi-GPT-neo-base](https://huggingface.co/Langboat/mengzi-gpt-neo-base)
+* 基于中文语料对多语言版本进行裁剪的 BLOOM 模型 [BLOOM-389m-zh](https://huggingface.co/Langboat/bloom-389m-zh)
+
 ## Update 2022-08-18
 @huajingyun 
 * 添加已开源的孟子蒸馏模型 [Mengzi-BERT-L6-H768](https://huggingface.co/Langboat/mengzi-bert-L6-H768)。该模型由 mengzi-bert-large 蒸馏获得。
@@ -55,6 +60,8 @@
 |Mengzi-T5-base|220M|适用于文案生成、新闻生成等可控文本生成任务|与 T5 结构相同，不包含下游任务，需要在特定任务上 Finetune 后使用。与 GPT 定位不同，不适合文本续写|[HuggingFace](https://s.langboat.com/hfmengzit5base), [国内ZIP下载](https://s.langboat.com/mengzit5base), [PaddleNLP](https://bj.bcebos.com/paddlenlp/models/transformers/community/Langboat/mengzi-t5-base/model_state.pdparams) |
 |Mengzi-T5-base-MT|220M|提供 Zero-Shot、Few-Shot能力|多任务模型，可通过prompt完成各种任务|[HuggingFace](https://huggingface.co/Langboat/mengzi-t5-base-mt) |
 |Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
+|Mengzi-GPT-neo-base|125M|文本续写类任务|基于中文语料从头训练，适合作为相关工作的 baseline 模型|[HuggingFace](https://huggingface.co/Langboat/mengzi-gpt-neo-base)|
+|BLOOM-389m-zh|389M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-389m-zh)
 
 # 快速上手
 ## Mengzi-BERT
