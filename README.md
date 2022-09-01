@@ -12,6 +12,9 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-09-01
+* 添加 4 个基于中文语料裁剪的 BLOOM 模型
+
 ## Update 2022-08-29
 添加两个已开源的 GPT 架构模型：
 * 基于中文语料从头训练的 GPT-neo 模型 [Mengzi-GPT-neo-base](https://huggingface.co/Langboat/mengzi-gpt-neo-base)
@@ -62,6 +65,10 @@
 |Mengzi-Oscar-base|110M|适用于图片描述、图文互检等任务|基于 Mengzi-BERT-base 的多模态模型。在百万级图文对上进行训练|[HuggingFace](https://s.langboat.com/hfmengzioscarbase)|
 |Mengzi-GPT-neo-base|125M|文本续写类任务|基于中文语料从头训练，适合作为相关工作的 baseline 模型|[HuggingFace](https://huggingface.co/Langboat/mengzi-gpt-neo-base)|
 |BLOOM-389m-zh|389M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-389m-zh)
+|BLOOM-800m-zh|800M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-800m-zh)
+|BLOOM-1b4-zh|1400M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-1b4-zh)
+|BLOOM-2b5-zh|2500M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-2b5-zh)
+|BLOOM-6b4-zh|6400M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-6b4-zh)
 
 # 快速上手
 ## Mengzi-BERT
