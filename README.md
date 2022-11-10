@@ -12,6 +12,9 @@
 
 [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
 
+## Update 2022-11-10
+* 增加 Guohua-Diffusion
+
 ## Update 2022-10-13
 * 增加 ReGPT-125M-200G，基于 [Mengzi-Retrieval-LM](https://github.com/Langboat/mengzi-retrieval-lm) 在 GPT-Neo-125M 上训练的模型
 
@@ -73,6 +76,7 @@
 |BLOOM-2b5-zh|2500M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-2b5-zh)
 |BLOOM-6b4-zh|6400M|文本续写类任务|基于中文语料对多语言版本进行裁剪的 BLOOM 模型，降低了对显存的需求|[HuggingFace](https://huggingface.co/Langboat/bloom-6b4-zh)
 |ReGPT-125M-200G|125M|文本续写类任务|通过 https://github.com/Langboat/mengzi-retrieval-lm 在 GPT-Neo-125M 上训练的模型|[HuggingFace](https://huggingface.co/Langboat/ReGPT-125M-200G)
+|Guohua-Diffusion| - |国画风文图生成|基于 StableDiffusion v1.5 进行 DreamBooth 训练|[HuggingFace](https://huggingface.co/Langboat/Guohua-Diffusion)
 
 # 快速上手
 ## Mengzi-BERT
