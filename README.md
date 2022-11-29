@@ -87,6 +87,7 @@ from transformers import BertTokenizer, BertModel
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
 ```
+
 或者
 ```python
 # 使用 PaddleNLP 加载
@@ -95,6 +96,7 @@ from paddlenlp.transformers import BertTokenizer, BertModel
 tokenizer = BertTokenizer.from_pretrained("Langboat/mengzi-bert-base")
 model = BertModel.from_pretrained("Langboat/mengzi-bert-base")
 ```
+Integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/mengzi-bert-base)
 
 ## Mengzi-T5
 ```python
